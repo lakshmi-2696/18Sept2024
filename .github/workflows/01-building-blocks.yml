@@ -1,0 +1,22 @@
+name: My first workflow
+on: push
+
+jobs:
+ echo-hello:
+  runs-on: ubuntu-latest
+  steps:
+   - run: echo 'Hello World'
+ echo-goodbye:
+  runs-on: ubuntu-latest
+  steps:
+   - name: Failed Step
+     run: |
+      echo 'I will fail'
+
+   - name: Say Goodbye
+     run: |
+      echo 'Goodbye!'
+    
+
+   
+ 
