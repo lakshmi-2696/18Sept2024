@@ -18,7 +18,9 @@ jobs:
  echo-mac:
   runs-on: mac-latest
   steps:
-   - run: echo "Run for $RUNNER_OS"
+   - name: Mac
+     shell: bash
+     run: echo "Run for $RUNNER_OS"
    
   
  
