@@ -19,8 +19,8 @@ jobs:
    - name: Show OS
      shell: bash
      run: |
-      echo: "This job is running on a Windows runner."
-      echo: "Run for $RUNNER_OS"
+      echo "This job is running on a Windows runner."
+      echo "Run for $RUNNER_OS"
 
     
  mac-echo:
@@ -29,8 +29,8 @@ jobs:
    - name:  Show OS
      shell: bash
      run: |
-      echo: "This job is running on a MacOS runner."
-      echo: "Run for $RUNNER_OS"
+      echo "This job is running on a MacOS runner."
+      echo "Run for $RUNNER_OS"
    
   
  
