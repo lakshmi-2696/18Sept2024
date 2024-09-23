@@ -4,6 +4,8 @@ on:
   workflow_dispatch:
   # schedule: 
   # - cron: '*/5 * * * *'
+  schedule:
+    - cron: '*/1 * * * *'
 
 jobs:
  echo-workflow:
