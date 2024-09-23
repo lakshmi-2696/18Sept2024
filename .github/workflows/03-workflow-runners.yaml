@@ -8,7 +8,11 @@ jobs:
  echo-ubuntu:
   runs-on: ubuntu-latest
   steps:
-  - run: echo "Run for $RUNNER_OS"
+   - name: Show OS
+     run: |
+      echo "This job is running on an Ubuntu runner"
+            Run for $RUNNER_OS"
+  
  echo-windows: 
   runs-on: windows-latest
   steps:
