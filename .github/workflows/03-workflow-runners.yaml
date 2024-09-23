@@ -1,0 +1,24 @@
+name: 03 - Workflow Runners
+
+on:
+ push:
+ workflow_dispatch:
+
+jobs:
+ echo-ubuntu:
+  runs-on: ubuntu-latest
+  steps:
+  - run: echo "Run for $RUNNER_OS"
+ echo-windows: 
+  runs-on: windows-latest
+  steps:
+   - name: Windows
+     shell: bash
+     run: echo "Run for $RUNNER_OS"
+ echo-mac:
+  runs-on: mac-latest
+  steps:
+   - run: echo "Run for $RUNNER_OS"
+   
+  
+ 
